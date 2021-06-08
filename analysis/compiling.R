@@ -4,12 +4,8 @@ library(igraph)
 
 source("processing/TN_networks_build.R")
 source("processing/Microfinance_networks_build.R")
-#source("processing/MJDenny_networks_build.R")
 source("processing/YWB_networks_build.R")
 source("processing/Mtakula_networks_build.R")
-#source("processing/Nain_networks_build.R")
-#source("processing/Isakov_networks_build.R")
-#source("processing/StanfordDorm_networks_build.R")
 
 TNpairs <- c("snSurv_LoanAsk", "snSurv_LoanReceive",
              "snSurv_ItemBorrow","snSurv_ItemReceive")
@@ -40,8 +36,6 @@ TNnets_atts_sub <- TNnets_atts[which(TNnets_atts$Network_Name %in% TNpairs),]
 IMnets_atts_full <- do.call("rbind", replicate(75, IMnets_atts[,1:13], simplify = FALSE))
 IMnets_atts_full$keep <- IMnets_atts_full$Network_Name %in% IMpairs
 IMnets_atts_full_sub <- IMnets_atts_full[which(IMnets_atts_full$Network_Name %in% IMpairs),]
-#HNnets_atts_full <- do.call("rbind", replicate(11, HNnets_atts[,1:13], simplify = FALSE))
-#SDnets_atts_full <- do.call("rbind", replicate(4, SDnets_atts[,1:13], simplify = FALSE))
 YWBnets_atts$keep <- YWBnets_atts$Network_Name %in% YWBpairs
 YWBnets_atts_sub <- YWBnets_atts[which(YWBnets_atts$Network_Name %in% YWBpairs),]
 MTnets_atts <- MTnets_atts[,1:13]
@@ -49,11 +43,9 @@ MTnets_atts$keep <- MTnets_atts$Network_Name %in% MTpairs
 MTnets_atts_sub <- MTnets_atts[which(MTnets_atts$Network_Name %in% MTpairs),]
 MTnets_atts_sub <- MTnets_atts_sub[match(MTpairs, MTnets_atts_sub$Network_Name),]
 
-#rm(list=setdiff(ls(), c("Tenpatti_nets","Alakapuram_nets", "IMnets", "mjnets", "YWBnets", "Mtakula_nets", "Nainnets", "HNnets", "TNnets_atts", "IMnets_atts_full", "mjnets_atts", "YWBnets_atts", "MTnets_atts", "Nainnets_atts", "HNnets_atts","SDnets_atts_full")))
 
 
 #combine all into networks list and overall metadata table
-#note that MJDenny already excludes unwanted networks
 
 net_atts <- rbind.data.frame(TNnets_atts_sub,
                              YWBnets_atts_sub,
@@ -61,10 +53,7 @@ net_atts <- rbind.data.frame(TNnets_atts_sub,
                              IMnets_atts_full_sub)
 net_atts$source <- c(rep("TN", length(TNnets_atts_sub$Network_Name)),
                      rep("WB", length(YWBnets_atts_sub$Network_Name)),
-                     #rep("MJ", length(mjnet_atts$Network_Name)),
                      rep("MT", length(MTnets_atts_sub$Network_Name)),
-                     #rep("NN", length(Nainnets_atts$Network_Name)),
-                     #rep("HN", length(HNnets_atts_full$Network_Name)),
                      rep("IM", length(IMnets_atts_full_sub$Network_Name)))
 
 Mtakula_nets1 <- Mtakula_nets[MTnets_atts$keep==TRUE]
@@ -191,15 +180,7 @@ for(i in 1:length(networks)){
     node_atts[[i]]$loctrans = transitivity(net, type="local")
     #node_atts[[i]]$closeness = closeness(net, mode="all", weights=NA)
 
-    # 1.2 ego-network level
-    #EgoNets = make_ego_graph(net, order=1, mode="out")
-    #for(j in 1:length(EgoNets)){
-    #  node_atts$egoden[j] = graph.density(delete_vertices(EgoNets[[j]],V(EgoNets[[j]])$name == V(net)$name[j]))
-    #  node_atts$egotrans[j] = transitivity(delete_vertices(EgoNets[[j]],V(EgoNets[[j]])$name == V(net)$name[j]), type="global")
-    #  node_atts$ego_size[j] = vcount(delete_vertices(EgoNets[[j]],V(EgoNets[[j]])$name == V(net)$name[j]))
-    #}
-
-    # 1.3 network-level
+    # 1.2 network level
     net_atts$directed[i] <- is.directed(net)
     net_atts$weighted[i] <- is.weighted(net)
     net_atts$density[i] <- graph.density(net)
@@ -241,24 +222,3 @@ for(i in 1:length(networks)){
       net_atts$avpl_weighted_dir[i] = mean(dist[is.finite(dist) & dist!=0])
     }
 }
-
-#append reciprocity from addHealth
-#source("processing/AH_build.R")
-#net_atts <- rbind.data.frame(AH_net_atts,net_atts)
-
-
-#net_atts <- net_atts[which(net_atts$Include=="Y"),]
-
-#GWESP/GWDSP
-#dyadic measures (affiliation?)
-#reciprocity across tie types (how does reciprocity increase as you concatenate network layers.)
-#reciprocity for weighted networks
-#for all dyads, X possible relationship types, what fraction were named for each dyad
-#additional loop for statnet stuff
-#library(statnet)
-#library(intergraph)
-#for (i in 1:length(networks)) {
-#  stnet <- asNetwork(networks[[i]])
-#  without_gwstat <- summary(newnet ~ gwesp(alpha,fixed=TRUE) + gwdsp(alpha,fixed=TRUE))
-#  without_spcount <- summary(newnet ~ esp(0:(n-2)) + dsp(0:(n-2)))
-#}

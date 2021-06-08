@@ -73,7 +73,7 @@ for (i in types) {
 }
 print("Table 1")
 xtable(IMconcsummary, digits=2)
-xtable(other_concord[, c(1,35, 36, 37)], digits=2)
+xtable(other_concord[, c(1,37, 38, 39)], digits=2)
 
 ### Figure 2 concordance ###
 avgprop <- aggregate(IMnet_concord$concord_prop, list(IMnet_concord$Village), mean)
@@ -177,13 +177,6 @@ xtable(otheragg_summary, digits = c(0,0,0,2,2))
 
 ### Table 2, reciprocity bi-reporting and repeat naming ###
 
-### OLD CODE (pre Cody's comment) ###
-#in_mut <- concord$net1_mut/concord$union_mut
-#out_mut <- concord$net2_mut/concord$union_mut
-#this doesn't work because many of the reciprocal ties in in/out layers are duplicated
-#total_mut <- (concord$union_mut - concord$net1_mut - concord$net2_mut)/ concord$union_mut
-#instead use proportion of mutual ties in the union that were one-way reciprocity nominations
-
 mut_source <- data.frame(pct_recip_bi = concord$pct_recip_bi)#, rep_prob = concord$rep_prob)
 mut_source$name <- c(net_atts$Network_Name[seq(1,30,by=2)], as.character(net_atts$newcol[(nrow(net_atts)-299):nrow(net_atts)]))
 other_mut <- mut_source[1:15,]
@@ -193,13 +186,9 @@ IMmutsummary <- data.frame(name=character(),
                        mean_total=numeric(), std_total=numeric())
 for (i in c("Money", "Advice", "HH Items", "Visit")) {
   temp <- mut_source[which(mut_source$name==i),]
-  #mean_rep <- mean(temp$rep_prob)
-  #std_rep <- sd(temp$rep_prob)
   mean_total <- mean(temp$pct_recip_bi)
   std_total <- sd(temp$pct_recip_bi)
   IMmutsummary <- rbind(IMmutsummary, data.frame(name=i, 
-    #mean_rep=mean_rep,
-    #std_rep=std_rep, 
     mean_total=mean_total,
     std_total=std_total))
 }
