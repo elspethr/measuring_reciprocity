@@ -1,3 +1,7 @@
+## R files
+.Rhistory
+.Rapp.history
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

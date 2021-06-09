@@ -73,7 +73,7 @@ for (i in types) {
 }
 print("Table 1")
 xtable(IMconcsummary, digits=2)
-xtable(other_concord[, c(1,37, 38, 39)], digits=2)
+xtable(other_concord[, c(1, 37, 38, 39)], digits=2)
 
 ### Figure 2 concordance ###
 avgprop <- aggregate(IMnet_concord$concord_prop, list(IMnet_concord$Village), mean)
