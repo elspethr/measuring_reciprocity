@@ -26,12 +26,12 @@ Requests to access these data should be directed to Eleanor A. Power, e.a.power@
 
 ##### Kangiqsujuaq
 
-Related publication:  Ready, E. and Power, E.A., 2018. [Why Wage Earners Hunt: Food Sharing, Social Structure, and Influence in an Arctic Mixed Economy.](https://www.journals.uchicago.edu/doi/full/10.1086/696018) *Current Anthropology* 59(1): 74-97.
+Related publication:  Ready, E. and Power, E.A., 2018. [Why wage earners hunt: Food sharing, social structure, and influence in an arctic mixed economy.](https://www.journals.uchicago.edu/doi/full/10.1086/696018) *Current Anthropology* 59(1): 74-97.
 
 Requests to access these data should be directed to Elspeth Ready, elspeth_ready@eva.mpg.de
 
 ##### Mtakula datasets
 
-Related publication: Kasper, C., and Borgerhoff Mulder, M. 2015. [Who helps and why.](https://www.jstor.org/stable/10.1086/683024?origin=JSTOR-pdf&seq=1#metadata_info_tab_contents) *Current Anthropology* 56(5): 701-732.
+Related publication: Kasper, C., and Borgerhoff Mulder, M. 2015. [Who helps and why: Cooperative networks in Mpimbwe](https://www.jstor.org/stable/10.1086/683024?origin=JSTOR-pdf&seq=1#metadata_info_tab_contents) *Current Anthropology* 56(5): 701-732.
 
 Requests to access these data should be directed to Monique Borgerhoff Mulder, monique_borgerhoff@eva.mpg.de
