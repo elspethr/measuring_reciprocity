@@ -32,6 +32,6 @@ Requests to access these data should be directed to Elspeth Ready, elspeth_ready
 
 ##### Mtakula datasets
 
-Related publication: Kasper, C., and Borgerhoff Mulder, M. 2015. [Who helps and why: Cooperative networks in Mpimbwe](https://www.jstor.org/stable/10.1086/683024?origin=JSTOR-pdf&seq=1#metadata_info_tab_contents) *Current Anthropology* 56(5): 701-732.
+Related publication: Kasper, C., and Borgerhoff Mulder, M. 2015. [Who helps and why: Cooperative networks in Mpimbwe.](https://www.jstor.org/stable/10.1086/683024?origin=JSTOR-pdf&seq=1#metadata_info_tab_contents) *Current Anthropology* 56(5): 701-732.
 
 Requests to access these data should be directed to Monique Borgerhoff Mulder, monique_borgerhoff@eva.mpg.de
