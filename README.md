@@ -4,7 +4,7 @@ This repository contains the code to reproduce the analyses and figures/table in
 
 Ready, E. and Power, E.A. 2021. Measuring Reciprocity: Double Sampling, Concordance, and Network Construction.
 
-The networks from each dataset are generated in "processing" data files. These are aggregated and networks measures presented in the paper are calculated in the file "compiling.R". 
+The networks from each dataset are generated in "processing" data files. These are aggregated and network measures presented in the paper are calculated in the file "compiling.R". 
 
 The R file "paper_figtabs.R" sources the compiling file and generates Figure 2–4 and Tables 1, 2, S2, and S3. File "microfinance_ERGMs.R" runs the multilevel ERGMs and produces Figure 5. Note that the ERGMs take considerable time to run.
 
@@ -34,4 +34,4 @@ Requests to access these data should be directed to Elspeth Ready, elspeth_ready
 
 Related publication: Kasper, C., and Borgerhoff Mulder, M. 2015. [Who helps and why.](https://www.jstor.org/stable/10.1086/683024?origin=JSTOR-pdf&seq=1#metadata_info_tab_contents) *Current Anthropology* 56(5): 701-732.
 
-Requests to access these data should be directed to Monique Borgerhoff Mulder, mborgerhoffmulder@gmail.com
+Requests to access these data should be directed to Monique Borgerhoff Mulder, monique_borgerhoff@eva.mpg.de
