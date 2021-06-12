@@ -26,7 +26,7 @@ Requests to access these data should be directed to Eleanor A. Power, e.a.power@
 
 ##### Kangiqsujuaq
 
-Related publication:  Ready, E. and Power, E.A., 2018. [Why wage earners hunt: Food sharing, social structure, and influence in an arctic mixed economy.](https://www.journals.uchicago.edu/doi/full/10.1086/696018) *Current Anthropology* 59(1): 74-97.
+Related publication:  Ready, E. and Power, E.A., 2018. [Why wage earners hunt: Food sharing, social structure, and influence in an Arctic mixed economy.](https://www.journals.uchicago.edu/doi/full/10.1086/696018) *Current Anthropology* 59(1): 74-97.
 
 Requests to access these data should be directed to Elspeth Ready, elspeth_ready@eva.mpg.de
 
