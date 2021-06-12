@@ -110,7 +110,7 @@ net_atts$Sampling1[net_atts$source == "WB" & net_atts$Sampling == "Straight"] <-
 
 net_atts$Sampling2 <- factor(net_atts$Sampling1, levels = c("Incoming", "Outgoing", "Intersection", "Union"))
 
-net_atts$other <- ifelse(net_atts$source == "IM", "IM", "Others")
+net_atts$other <- ifelse(net_atts$source == "IM", "Karnataka", "Others")
 net_atts$newcol <- net_atts$source
 net_atts$newcol[net_atts$source == "IM"] <- net_atts$Edge_Type[net_atts$source == "IM"]
 net_atts$newcol[net_atts$Edge_Type == "Get household items"] <- "HH Items"
@@ -121,6 +121,10 @@ net_atts$newcol[net_atts$Edge_Type == "Get visitors"] <- "Visit"
 net_atts$newcol[net_atts$Edge_Type == "Go visit"] <- "Visit"
 net_atts$newcol[net_atts$Edge_Type == "Give advice"] <- "Advice"
 net_atts$newcol[net_atts$Edge_Type == "Get advice"] <- "Advice"
+net_atts$newcol[net_atts$source == "TN"] <- "Tamil Nadu"
+net_atts$newcol[net_atts$source == "WB"] <- "Kangiqsujuaq"
+net_atts$newcol[net_atts$source == "MT"] <- "Mtakula"
+net_atts$newcol <- factor(net_atts$newcol, levels = unique(net_atts$newcol)[c(4:7, 1:3)])
 net_atts$newcol <- factor(net_atts$newcol, levels = unique(net_atts$newcol)[c(4:7, 1:3)])
 
 
