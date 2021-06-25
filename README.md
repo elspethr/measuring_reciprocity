@@ -14,9 +14,9 @@ The data used in the paper originate from the following sources:
 
 Related publication: Jackson, M.O., Rodriguez-Barraquer, T. and Tan, X. 2012. [Social Capital and Social Quilts: Network Patterns of Favor Exchange.](https://www.aeaweb.org/articles?id=10.1257/aer.102.5.1857) *American Economic Review* 102 (5): 1857-97.
 
-Metadata: https://web.stanford.edu/~jacksonm/Data.html
+Metadata: https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/21538
 
-Raw network data: https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/21538
+Raw network data: https://web.stanford.edu/~jacksonm/Data.html
 
 ##### Tamil Nadu
 
