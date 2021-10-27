@@ -12,11 +12,11 @@ The data used in the paper originate from the following sources:
 
 ##### Karnataka
 
-Related publication: Jackson, M.O., Rodriguez-Barraquer, T. and Tan, X. 2012. [Social Capital and Social Quilts: Network Patterns of Favor Exchange.](https://www.aeaweb.org/articles?id=10.1257/aer.102.5.1857) *American Economic Review* 102 (5): 1857-97.
+Related publication: Jackson, M.O., Rodriguez-Barraquer, T. and Tan, X. 2012. [Social Capital and Social Quilts: Network Patterns of Favor Exchange.](https://www.aeaweb.org/articles?id=10.1257/aer.102.5.1857) *American Economic Review* 102 (5): 1857-97. and Banerjee, A., Chandrasekhar, A. G., Duflo, E., & Jackson, M. O. (2013). [The diffusion of microfinance](https://doi.org/10.1126/science.1236498). Science, 341(6144), 1236498-1–7. 
 
-Metadata: https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/21538
+Individual- and household-level data (and a version of the network data which we do not use): https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/21538
 
-Raw network data: https://web.stanford.edu/~jacksonm/Data.html
+Network data (in edgelist format which identifies reporter): https://web.stanford.edu/~jacksonm/Data.html
 
 ##### Tamil Nadu
 
